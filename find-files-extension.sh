@@ -1,2 +1,2 @@
 #!/bin/bash
-find *.txt  -exec basename {} .txt \;
+find . -name '*.txt'  -exec basename {} .txt \;
