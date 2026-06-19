@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -l | sed -n 'p;n'
+ls -l | sed '/^total /d' | sed -n '1~2p'
