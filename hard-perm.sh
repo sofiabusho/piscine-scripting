@@ -9,4 +9,4 @@ chmod u-w,o-r 6
 chmod u-w+x,g-rw+x,o-r 7
 chmod g-rw 8
 chmod u-w,g-rw,o-r+w 9
-chmod u -wx,g-rwx,o-r A  
+chmod u-wx,g-rwx,o-r A  
