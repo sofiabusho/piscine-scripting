@@ -1,7 +1,7 @@
 #!/bin/bash
 chmod 401 hard-perm/0
 chmod 402 hard-perm/1
-chmod 601 hard-perm/2
+chmod 604 hard-perm/2
 chmod 777 hard-perm/3
 chmod 510 hard-perm/4
 chmod 460 hard-perm/5
