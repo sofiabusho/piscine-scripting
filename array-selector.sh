@@ -1,16 +1,16 @@
 #!/bin/bash
-colors=("red" "blue" "green" "white" "black")
+colors=(red blue green white black)
 if [[ $# -ne 1 ]]; then
     echo "Error"
-    exit 1
+    exit 0
 fi
-if ! [[ "$1" =~ ^[0-9]+$ ]]; then
+if ! [[ $1 =~ ^[0-9]+$ ]]; then
     echo "Error"
-    exit 1
+    exit 0
 fi
-if [[ "$1" -lt 1 ]] || [[ "$1" -gt 5 ]]; then
+if [[ $1 -lt 1 ]] || [[  $1 -gt ${#colors[@]}  ]]; then
     echo "Error"
-    exit 1
+    exit 0
 fi
 index=$(( $1 - 1 ))
 echo "${colors[$index]}"
