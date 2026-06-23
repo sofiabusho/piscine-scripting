@@ -4,7 +4,7 @@ if [[ $# -ne 2 ]]; then
     exit 0
 fi
 
-if ! [[ $1 =~ ^[0-9]+$ ]]; then
+if ! [[ $1 =~ ^-?[0-9]+$ ]]; then
     echo "Error: Only two numeric arguments are acceptable!"
     exit 0
 fi
