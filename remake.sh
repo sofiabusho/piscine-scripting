@@ -7,7 +7,7 @@ fi
 touch "$1/ciao"
 chmod 442 "$1/ciao"
 touch -t 01010001 "$1/ciao"
-mk1 "$1/mamma"
+mkdir "$1/mamma"
 chmod 777 "$1/mamma"
 touch -t 01020001 "$1/mamma"
 touch "$1/guarda"
