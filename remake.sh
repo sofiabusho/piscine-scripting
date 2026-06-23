@@ -1,7 +1,7 @@
 #!/bin/bash
-if [[ $# -ne 1 ]] || [[ ! -d $1 ]]; then
-	echo "Error"
-	exit 1
+if [[ $# -ne 1 ]] || [[ ! -d "$1" ]]; then
+    echo "Error"
+    exit 1
 fi
 
 dir=$1
@@ -26,6 +26,6 @@ mkdir "$dir/mi"
 chmod 452 "$dir/mi"
 touch -t 01050001 "$dir/mi"
 
-touch "$dir/diverto"
+touch "$dir/diverto" 
 chmod 421 "$dir/diverto"
 touch -t 01060001 "$dir/diverto"
