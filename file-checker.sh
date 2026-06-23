@@ -13,21 +13,21 @@ else
     exit 0
 fi
 
-if [[ -r "$file"]]; then
+if [[ -r "$file" ]]; then
     echo "File is readable!"
     exit 0
 else
     echo "File is not readable!"
 fi
 
-if [[ -w "$file"]]; then
+if [[ -w "$file" ]]; then
     echo "File is writable!"
     exit 0
 else
     echo "File is not writable!"
 fi
 
-if [[ -x "$file"]]; then
+if [[ -x "$file" ]]; then
     echo "File is executable!"
     exit 0
 else
