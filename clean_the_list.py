@@ -1,7 +1,8 @@
 def clean_list(shopping_list):
     if not shopping_list:
             return []
-    if 'milk' not in shopping_list:
+    has_milk = any(item.strip().lower() == 'milk' for item in shopping_list)
+    if not has_milk:
         shopping_list = shopping_list + ['milk'] 
     result = []
     for i, item in enumerate(shopping_list, start=1):
